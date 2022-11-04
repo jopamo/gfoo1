@@ -7,16 +7,14 @@ package std;
 public class Solution {
   public static String solution(String x) {
     char ch;
-	String str = "";
+    String str = "";
 
     for (int i = 0; i < x.length(); ++i) {
       ch = x.charAt(i);
       if (ch >= 'a' && ch <= 'z') {
         ch = (char)(-ch + 219);
-        str += ch;
-      } else {
-        str += ch;
       }
+      str += ch;
     }
     return str;
   }
